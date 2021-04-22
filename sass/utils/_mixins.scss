@@ -1,0 +1,7 @@
+@mixin generateIcons($iconList) {
+  @each $iconName in $iconList {
+    .principe__item--#{$iconName}::before {
+      background-image: url(/images/#{$iconName}.png);
+    }
+  }
+}

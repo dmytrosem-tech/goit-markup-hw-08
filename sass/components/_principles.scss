@@ -1,0 +1,62 @@
+.principles {
+  padding-bottom: 0;
+}
+
+.principe {
+  @extend %list;
+
+  &__item {
+    width: calc((100% - 90px) / 4);
+    &::before {
+      display: block;
+      content: '';
+      height: 120px;
+      background-color: #f5f4fa;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 30px;
+      color: red;
+    }
+
+    &--mright {
+      margin-right: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: $titleTxtColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $mainTxtColor;
+    text-decoration: none;
+    text-transform: none;
+  }
+}
+
+.principe__item--sputnic::before {
+  background-image: url(../images/sputnic.png);
+}
+
+.principe__item--clock::before {
+  background-image: url(../images/clock.png);
+}
+
+.principe__item--pc::before {
+  background-image: url(../images/pc.png);
+}
+
+.principe__item--cosmonaut::before {
+  background-image: url(../images/cosmonaut.png);
+}

@@ -1,0 +1,181 @@
+.footer {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  
+    background-color: $mainBgColor;
+    color: $mainTxtColor;
+  }
+
+  .footer-case {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 255px;
+  }
+
+  .footer-address {
+
+    &__logo {
+        display: block;
+        margin-right: auto;
+        margin-bottom: 20px;
+      
+        color: $alternativeColor;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+      
+        text-decoration: none;
+      }
+
+      &__logo--part {
+        color: $colorLight;
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+      }
+
+      &__text {
+        margin-bottom: 8px;
+      
+        font-style: normal;
+        color: $colorLight;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+      }
+
+      &__item {
+        display: block;
+      
+        font-style: normal;
+        color: $mainTxtColor;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+      }
+
+      &__item--mbottom {
+        margin-bottom: 8px;
+      }
+  }
+
+  .footer-socials {
+    height: 95px;
+
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $colorLight;
+      }   
+  }
+
+  .footer-socials-list {
+    display: inline-flex;
+    
+    &__item--mright {
+        margin-right: 10px;
+      }
+
+      &__item {
+        display: flex;
+        height: 44px;
+        width: 44px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+      
+        transition: background-color $animation;
+      }
+
+      &__item:hover,
+      &__item:focus {
+        background-color: $alternativeColor;
+      }
+
+      &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+      }
+
+      &__icon {
+        fill: $colorLight;
+      }
+  }
+
+  .footer-form {
+    height: 95px;
+
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $colorLight;
+      }
+
+      &__input-box {
+        display: flex;
+      }
+
+      &__input {
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        padding-left: 16px;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        color: $colorLight;
+      }
+
+      &__input::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+        color: $mainTxtColor;
+      }
+
+      &__submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        color: $colorLight;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        cursor: pointer;
+        background-color: $alternativeColor;
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
+      }
+
+      &__submit-btn-icon {
+        margin-left: 10px;
+        fill: $colorLight;
+      }
+  }
