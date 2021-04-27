@@ -10,6 +10,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // outline: 2px solid red;
 }
 
 .grid {
@@ -46,6 +47,7 @@ html {
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
