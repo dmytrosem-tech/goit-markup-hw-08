@@ -47,14 +47,15 @@
 }
 
 .mobile-menu {
-  padding: 0 80px 50px 40px;
+  padding: 45px 80px 50px 40px;
 
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
+    left: -3px;
+    top: 0;
+    width: 101%;
+    height: 100vh;
 
     &.is-open {
       display: block;

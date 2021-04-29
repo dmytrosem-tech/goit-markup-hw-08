@@ -21,6 +21,10 @@ html {
   color: #757575;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -196,16 +200,17 @@ img {
 }
 
 .mobile-menu {
-  padding: 0 80px 50px 40px;
+  padding: 45px 80px 50px 40px;
 }
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: none;
     position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
+    left: -3px;
+    top: 0;
+    width: 101%;
+    height: 100vh;
   }
   .mobile-menu.is-open {
     display: block;
