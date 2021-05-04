@@ -13,6 +13,7 @@
   }
 }
 .header-case {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,18 +48,22 @@
 }
 
 .mobile-menu {
-  padding: 45px 80px 50px 40px;
+  
+
+  padding: 45px 0 50px 40px;
 
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     left: -3px;
     top: 0;
-    width: 101%;
+    width: 102%;
     height: 100vh;
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       background-color: $colorLight;
       z-index: 5;
     }
@@ -104,7 +109,7 @@
 
 .site-nav {
   @extend %list;
-  margin-bottom: 305px;
+  // margin-bottom: 305px;
 
   &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -180,6 +185,13 @@
       background: $alternativeColor;
       border-radius: 2px;
     }
+  }
+}
+
+.header-soc-case {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -297,16 +309,29 @@
     color: $alternativeColor;
   }
 
+  @media screen and (max-width: 399.98px) {
+    &__link {
+      display: inline-flex;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      color: $mainTxtColor;
+    }
+  }
+  @media screen and (min-width: 400px) and (max-width: 767.98px) {
+    &__link {
+      font-size: 35px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     margin: 0;
     display: flex;
     &__link {
       display: inline-flex;
-      font-weight: 500;
       font-size: 12px;
       line-height: 14px;
-      letter-spacing: 0.02em;
-      color: $mainTxtColor;
     }
     &__link:hover,
     &__link:focus {
@@ -362,10 +387,18 @@
 
   &__link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.02em;
     color: $alternativeColor;
+
+    @media screen and (min-width: 400px) and (max-width: 439.98px) {
+      font-size: 15px;
+    }
+
+    @media screen and (min-width: 440px) and (max-width: 767.98px) {
+      font-size: 18px;
+    }
   }
   @media screen and (min-width: 767px) {
     display: none;

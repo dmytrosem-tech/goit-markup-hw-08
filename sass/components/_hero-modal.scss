@@ -23,12 +23,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  
+  max-width: 450px;
+  width: 90%;
+  height: 610px;
+
   background-color: $colorLight;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform $animation;
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .callback-form {
@@ -37,7 +42,7 @@
   &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: $titleTxtColor;
@@ -128,15 +133,15 @@
   margin-bottom: 30px;
 
   &__check-txt {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     margin-right: 4px;
   }
 
   &__link {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: $alternativeColor;
   }
