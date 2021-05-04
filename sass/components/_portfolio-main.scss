@@ -30,6 +30,7 @@
 }
 
 .project-list {
+  
   .project-list__card {
     --grid__item: 1;
     position: relative;
@@ -132,4 +133,12 @@
     letter-spacing: 0.03em;
     text-decoration: none;
   }
+}
+
+.tab-border {
+  border: 1px solid $portfolioBorderColor;
+ }
+ 
+.tab-border__box {
+  border-bottom: none;
 }
