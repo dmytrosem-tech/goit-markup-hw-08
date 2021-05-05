@@ -206,14 +206,13 @@ img {
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: none;
-    left: -3px;
-    top: 100%;
-    width: 102%;
-    height: 100vh;
-    z-index: 1;
   }
   .mobile-menu.is-open {
     position: absolute;
+    left: -3px;
+    width: 102%;
+    height: 100vh;
+    z-index: 1;
     top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,7 +225,6 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-color: #ffffff;
-    z-index: 1;
   }
 }
 
@@ -253,7 +251,6 @@ img {
 }
 
 .header-menu-btn {
-  position: relative;
   z-index: 100;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
