@@ -208,11 +208,12 @@ img {
     display: none;
     position: absolute;
     left: -3px;
-    top: 0;
+    top: 100%;
     width: 102%;
     height: 100vh;
   }
   .mobile-menu.is-open {
+    top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
