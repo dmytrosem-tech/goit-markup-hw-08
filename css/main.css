@@ -147,7 +147,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .page-header {
-    border: none;
     margin-right: auto;
     margin-left: auto;
   }
@@ -253,7 +252,7 @@ img {
 
 .header-menu-btn {
   position: relative;
-  z-index: 10;
+  z-index: 100;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -730,6 +729,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 60px;
   }
 }
 
