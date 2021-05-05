@@ -251,13 +251,14 @@ img {
 }
 
 .header-menu-btn {
+  position: relative;
   z-index: 100;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0;
   padding: 0;
-  background-color: transparent;
+  background-color: aqua;
   border: none;
   cursor: pointer;
 }
