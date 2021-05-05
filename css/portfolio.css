@@ -206,13 +206,14 @@ img {
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: none;
-    position: absolute;
     left: -3px;
     top: 100%;
     width: 102%;
     height: 100vh;
+    z-index: 1;
   }
   .mobile-menu.is-open {
+    position: absolute;
     top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -225,7 +226,7 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-color: #ffffff;
-    z-index: 5;
+    z-index: 1;
   }
 }
 
