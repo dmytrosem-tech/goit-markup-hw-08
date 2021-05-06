@@ -631,6 +631,7 @@ img {
       flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: -8px;
 }
 
 .portfolio-filters__item {
@@ -706,7 +707,6 @@ img {
 .project-list .project-list__card {
   --grid__item: 1;
   position: relative;
-  width: 370px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

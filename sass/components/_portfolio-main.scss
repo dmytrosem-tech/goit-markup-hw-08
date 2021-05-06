@@ -30,11 +30,9 @@
 }
 
 .project-list {
-  
   .project-list__card {
     --grid__item: 1;
     position: relative;
-    width: 370px;
     transition: box-shadow $animation;
 
     @media screen and (min-width: 768px) {
@@ -137,8 +135,8 @@
 
 .tab-border {
   border: 1px solid $portfolioBorderColor;
- }
- 
+}
+
 .tab-border__box {
   border-bottom: none;
 }
